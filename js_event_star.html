@@ -1,0 +1,33 @@
+﻿<!DOCTYPE HTML>
+<HTML>
+
+<head>
+	<TITLE>목록 태그</TITLE>
+	<!--meta http-equiv="Content Type" content="text/html; charset=euc-kr " / --> 
+	<meta http-equiv="Content-Type" content=:text/html; charset=UTP-8" />
+<style>
+</style>	
+<script>
+window.onload= function() {
+		// document.getElementById('btn').onclick = function() {
+		//this.textContent = this.textContent + "★";
+		//this.textContent +=  "★";
+
+	var cnt = 0;
+	document.getElementById('btn').onclick = function() {
+		if(cnt >=5) {
+			this.textContent = "평점";
+	 		cnt = 0;
+		} else {
+			this.textContent += "★";
+			cnt++;
+	 	}
+	}
+}
+
+</script>
+</head>
+<body>
+<button id="btn">평점</button>
+</body>
+</html> 
